@@ -1,0 +1,233 @@
+
+@font-face {font-family: "iconfont";
+  src:
+  url('../font/iconfont.ttf?t=1536808271113') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg?t=1536808271113#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+}
+
+.icon-kecheng:before { content: "\e607"; }
+
+.icon-caidan:before { content: "\e62f"; }
+
+.icon-fanhui:before { content: "\e631"; }
+
+.icon-tuijian:before { content: "\e6bf"; }
+
+.icon-denglu:before { content: "\e601"; }
+
+.icon-shouye:before { content: "\e677"; }
+
+.icon-laoshishi:before { content: "\e632"; }
+
+.icon-xiaoxi:before { content: "\e605"; }
+
+.icon-youxiang:before { content: "\e612"; }
+
+.icon-wenda:before { content: "\e808"; }
+
+.icon-xingzhengguanli:before { content: "\e608"; }
+
+.icon-yanzhengma:before { content: "\e6ab"; }
+
+.icon-tuijian1:before { content: "\e678"; }
+
+.icon-liuyan:before { content: "\e60b"; }
+
+.icon-dianhua:before { content: "\e6ee"; }
+
+.icon-zuanshi:before { content: "\e603"; }
+
+.icon-kefu1:before { content: "\e600"; }
+
+.icon-peixunjiangshi:before { content: "\e61e"; }
+
+.icon-mima:before { content: "\e606"; }
+
+html{
+  font-size: 13.33333vw;
+}
+body {
+  font-size: 0.3rem;
+  -webkit-text-size-adjust: none;/*禁止用户对文字进行缩放。一般横竖屏切换的时候文字会被缩放*/
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+dl,
+dd{
+  margin: 0
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img{
+  vertical-align: top;
+}
+a{
+  text-decoration: none;
+}
+input,
+a{
+  /*按下时的背景颜色*/
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-appearance: none;/*清除默认圆角样式*/
+}
+.clear:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#header{
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: .9rem;
+  background: #323436;
+  z-index: 100;
+}
+.header-btn-right,
+.header-btn-left{
+  position: absolute;
+  top: 0;
+  width: .8rem;
+  height: .9rem;
+  text-align: center;
+}
+.header-btn-left{
+  left: 0;
+  font-size: .9rem;
+  color: #fff;
+}
+.header-btn-right{
+  right: 0
+}
+#logo{
+  display: block;
+  margin: 0.23rem auto 0;
+  width: 1.84rem;
+}
+.header-user-name{
+  padding: 0 .1rem;
+  text-align: right;
+  overflow: hidden;
+  font-size: .26rem;
+  text-overflow: ellipsis;
+  color: #d1d1d1;
+  line-height: .9rem
+}
+.footer-nav{
+  padding: .15rem .3rem .35rem;
+  background: #323436;
+}
+.miaov-contact a{
+  float: left;
+  position: relative;
+  font: .24rem/.6rem '\5b8b\4f53';
+  color: #fff;
+  padding: 0 .3rem 0 .95rem;
+}
+.miaov-contact a:before{
+  position: absolute;
+  left: 0.37rem;
+  top: 0;
+  font-size: .4rem;
+}
+.footer-nav nav a{
+  float: left;
+  box-sizing: border-box;
+  width: 25%;
+  margin-top: .2rem;
+  font: .24rem/.26rem '\5B8B\4F53';
+  color: #adaeae;
+  padding-left: 0.37rem;
+  border-right: 1px solid #adaeae;
+}
+.footer-nav nav a:nth-of-type(4n){
+  border: none;
+}
+.footer-copy{
+  font: .24rem/.74rem '\5FAE\8F6F\96C5\9ED1';
+  text-align: center;
+  color: #868b8d;
+  background: #2d2f30;
+}
+.page{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding-top: .9rem;
+}
+.page-con{
+  flex: 1;
+}
+
+.menu{
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 4.5rem;
+  height: 100vh;
+  padding: 1.2rem .5rem;
+  background: rgba(0,0,0,0.6);
+}
+.menu a{
+  display: block;
+  font: .3rem/.9rem '宋体';
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  color: rgba(255,255,255,.8);
+  z-index: 1
+}
+.menu a:before{
+  font-size: .4rem;
+  margin: 0 .1rem;
+  color: rgba(255,255,255,.6);
+  vertical-align: middle;
+}
+.menu a:first-child{
+  border-top: 1px solid rgba(255,255,255,.3);
+}
+.tab{
+  position: relative;
+  overflow: hidden;
+}
+.banner .picList{
+  width: 400vw;
+  overflow: hidden;
+}
+.banner .picList li {
+  float: left;
+  width: 100vw;
+}
+.banner .picList img{
+  width: 100vw;
+}
+.banner .picNav{
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  bottom: .2rem;
+  text-align: center;
+}
+.banner .picNav span{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 .1rem;
+  width: .3rem;
+  height: .1rem;
+  background: rgba(0,0,0,.5);
+}
+.banner .picNav .active{
+  background: rgba(243, 203, 158, 0.671);
+}
