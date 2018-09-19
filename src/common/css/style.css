@@ -64,6 +64,20 @@ dl,
 dd{
   margin: 0
 }
+h1,
+h2,
+h3,
+h4,
+th{
+  font-size: normal;
+}
+table{
+  border-collapse: collapse;
+}
+th,
+td{
+  padding: 0
+}
 ul{
   margin: 0;
   padding: 0;

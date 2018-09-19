@@ -21,7 +21,7 @@ export default class Home extends Component {
         <Header menu={true} login={true}/>
         <div className='page'>
           {/* <div className='page-con'></div> */}
-          {/* <Menu /> */}
+          <Menu />
           <div className='tab banner'>
             <ul className='picList'>
               {tabImg.map((item, index) => {
@@ -44,7 +44,7 @@ export default class Home extends Component {
           <Vip />
           <Miaov />
           <WorkList />
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </div>
     );
